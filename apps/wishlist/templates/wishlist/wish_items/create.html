@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Login/Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+    <h1>Create a New Wish List Item</h1>
+
+    <form action='/createItem' method='POST'>
+        {% csrf_token %}
+        <p>Item/Product: <input type='text' name='item'></p>
+        <p><input type='submit' value='Add'></p>
+    </form>
+    <a href='/logout'>Logout</a>
+</body>
+</html>
